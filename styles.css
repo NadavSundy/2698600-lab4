@@ -1,0 +1,120 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f6f7fb;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background: #111827;
+    color: white;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#country-input {
+    width: min(420px, 70vw);
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+}
+
+#search-btn {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #2563eb;
+    color: white;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+.spinner {
+    width: 44px;
+    height: 44px;
+    margin: 10px auto 20px;
+    border: 6px solid #e5e7eb;
+    border-top: 6px solid #2563eb;
+    border-radius: 50%;
+    animation: spin 1s linear infinite; 
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.country-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    margin-bottom: 18px;
+}
+
+.country-card h2 {
+    margin-top: 0;
+}
+
+.country-card img {
+    width: 140px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    margin-top: 10px;
+}
+
+
+.border-grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.border-item {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.border-item img {
+    width: 46px;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+}
+
+
+.error {
+    margin-top: 14px;
+    padding: 12px;
+    border-radius: 10px;
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+    color: #991b1b; 
+}
